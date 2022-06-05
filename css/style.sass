@@ -1,0 +1,1250 @@
+html,
+*,
+body 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  scroll-behavior: smooth;
+a
+  text-decoration: none
+
+.wrapper 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+
+
+
+
+
+.header 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #F7F7F7;
+  
+.header__logo
+  position: absolute
+  top: 50%
+  bottom: 50%
+  transform: translate(-50%, -50%)
+  transition: .1s all easy
+  width: 453px
+
+.header__logo2
+  display: none
+  transition: .1s all easy
+  
+
+
+.sec 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: white;
+
+.course1-sec
+  height: 100%
+  background: url('/img/Frame.png') no-repeat center center fixed
+  background-size: cover
+
+.sec3
+  height: 90%
+  padding-bottom: 100px
+    
+    
+  
+.citation-sec
+  background: url('/img/Frame.png') no-repeat center center fixed
+  background-size: cover
+.citation-sec__title 
+  font-family: 'Jost', sans-serif;
+  width: 500px;
+  font-size: 48px;
+  text-align: center;
+
+.course-sec__pic-block 
+  display: flex;
+  flex-direction: column;
+  margin-right: 36px;
+
+
+.course-container 
+  display: flex;
+  padding: 40px;
+
+
+.course-pic 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  /* or 45px */
+  letter-spacing: 0.02em;
+
+.course-pic1
+  background: url('/img/course1__pic1.jpg') center no-repeat
+  background-size: 100%
+.course-pic2
+  background: url('/img/course1__pic2.jpg') center no-repeat
+  background-size: 100%
+.course-pic3
+  background: url('/img/course1__pic3.jpg') center no-repeat
+  background-size: 100%
+
+.course-price 
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+
+
+.course-sec__descr-block 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 400px;
+
+
+.descr-text 
+  font-size: 20px;
+  margin-bottom: 30px;
+
+
+.btn 
+  background: rgba(10, 9, 8, 0.9);
+  border-radius: 10px;
+  color: white;
+  width: 300px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s linear;
+
+.btn:hover 
+  background: #f5f5f5;
+  color: black;
+  
+
+.form-sec 
+  background: url('/img/form-bg.png') top  no-repeat
+  background-size: cover 
+  min-height: 800px
+
+.form-sec__form 
+  display: flex;
+  flex-direction: column;
+  max-width: 491px;
+
+.form-sec__title 
+  width: 491px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 169.5%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+
+.form__btn 
+  margin: 0 auto;
+  margin-top: 10px;
+  background: rgba(10, 9, 8, 0.95);
+  border-radius: 10px; 
+  height: 68px;
+  width: 308px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.02em; 
+
+.form__input 
+  outline: none;
+  background: #EBEBEB;
+  border-radius: 10px;
+  border: none;
+  width: 490px;
+  height: 60px;
+  padding: 0 15px;
+  padding-top: 2px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: black;
+  letter-spacing: 0.02em;
+  &::placeholder
+    color: #606060;
+  
+
+
+.author-sec
+    height: 100vh
+
+.author-container 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+.author-sec__title
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000; 
+
+.author-sec__pic 
+  width: 200px;
+  height: 300px;
+  background: lightblue;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 40px;
+  cursor: pointer;
+
+
+.author-sec__descr 
+  text-align: center;
+  margin-bottom: 22px;
+
+.author-sec__tel 
+  margin-bottom: 7px;
+
+.author-sec__socials 
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 200px;
+  height: 50px;
+
+.author-social 
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: lightblue;
+  cursor: pointer;
+
+
+  // /////////////import css-variables from 
+.container
+  margin: 0 auto
+  margin-bottom: 35px
+
+.border
+  height: 305px
+  width: 200px
+  background: transparent
+  border-radius: 10px
+  transition: border 1s
+  position: relative
+
+  &:hover
+    border: 1px solid white
+
+  h2
+    font-family: 'Jost', sans-serif;
+    font-size: 18px
+    color: white
+    margin: 15px 15px
+    opacity: 0
+    transition: opacity 1s
+
+.card
+  height: 317px
+  width: 211px
+  border-radius: 10px
+  transition: background 0.8s
+  overflow: hidden
+  background: black
+  box-shadow: 0 40px 63px -60px #000000
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+
+.card0
+  background: url('/img/contacts-section__pic.png') center top no-repeat
+  background-size: 211px
+
+  &:hover
+    background: url('/img/contacts-section__pic.png') left center no-repeat
+    background-size: 422px
+
+    h2
+      opacity: 1
+
+    .fa
+      opacity: 1
+
+
+
+.fa
+  opacity: 0
+  transition: opacity 1s
+
+    //////////////
+  
+@media screen and (max-width: 940px) 
+  .header 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #F7F7F7;
+    
+    
+
+
+  .sec 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: white;
+
+  .course1-sec
+    height: 70%
+    background: url('/img/Frame.png') no-repeat center center fixed
+    background-size: cover
+            
+    
+  .citation-sec
+    background: url('/img/Frame.png') no-repeat center center fixed
+    background-size: cover
+
+
+
+  .course-pic 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 36px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    /* or 45px */
+    letter-spacing: 0.02em;
+
+  .course-pic1
+    background: url('/img/course1__pic1.jpg') center no-repeat
+    background-size: 100%
+  .course-pic2
+    background: url('/img/course1__pic2.jpg') center no-repeat
+    background-size: 100%
+  .course-pic3
+    background: url('/img/course1__pic3.jpg') center no-repeat
+    background-size: 100%
+
+  .course-price 
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+
+
+  .course-sec__descr-block 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 400px;
+
+
+  .descr-text 
+    font-size: 20px;
+    margin-bottom: 30px;
+
+
+  .btn 
+    background: rgba(10, 9, 8, 0.9);
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s linear;
+
+  .btn:hover 
+    background: #f5f5f5;
+    color: black;
+    
+
+  .form-sec 
+    background: url('/img/form-bg.png') top  no-repeat
+    background-size: cover 
+    min-height: 800px
+
+  .form-sec__form 
+    display: flex;
+    flex-direction: column;
+    max-width: 491px;
+
+  .form-sec__title 
+    width: 491px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 169.5%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
+  .form__btn 
+    margin: 0 auto;
+    margin-top: 10px;
+    background: rgba(10, 9, 8, 0.95);
+    border-radius: 10px; 
+    height: 68px;
+    width: 308px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.02em; 
+
+  .form__input 
+    outline: none;
+    background: #EBEBEB;
+    border-radius: 10px;
+    border: none;
+    width: 490px;
+    height: 60px;
+    padding: 0 15px;
+    padding-top: 2px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: black;
+    letter-spacing: 0.02em;
+    &::placeholder
+      color: #606060;
+    
+
+
+  .author-sec
+      height: 100vh
+
+  .author-container 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  .author-sec__title
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000; 
+
+  .author-sec__pic 
+    width: 200px;
+    height: 300px;
+    background: lightblue;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+
+  .author-sec__descr 
+    text-align: center;
+    margin-bottom: 22px;
+
+  .author-sec__tel 
+    margin-bottom: 7px;
+
+  .author-sec__socials 
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    height: 50px;
+
+  .author-social 
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: lightblue;
+    cursor: pointer;
+
+
+    // /////////////import css-variables from 
+  .container
+    margin: 0 auto
+    margin-bottom: 35px
+
+  .border
+    height: 305px
+    width: 200px
+    background: transparent
+    border-radius: 10px
+    transition: border 1s
+    position: relative
+
+    &:hover
+      border: 1px solid white
+
+    h2
+      font-family: 'Jost', sans-serif;
+      font-size: 18px
+      color: white
+      margin: 15px 15px
+      opacity: 0
+      transition: opacity 1s
+
+  .card
+    height: 317px
+    width: 211px
+    border-radius: 10px
+    transition: background 0.8s
+    overflow: hidden
+    background: black
+    box-shadow: 0 40px 63px -60px #000000
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+
+  .card0
+    background: url('/img/contacts-section__pic.png') center top no-repeat
+    background-size: 211px
+
+    &:hover
+      background: url('/img/contacts-section__pic.png') left center no-repeat
+      background-size: 422px
+
+      h2
+        opacity: 1
+
+      .fa
+        opacity: 1
+
+
+
+  .fa
+    opacity: 0
+    transition: opacity 1s
+
+  
+  .citation-sec__title 
+    font-family: 'Jost', sans-serif;
+    max-width: 350px;
+    font-size: 36px;
+    text-align: center;
+  
+  .header__logo
+    position: absolute
+    top: 50%
+    bottom: 50%
+    transform: translate(-50%, -50%)
+  
+  .course-sec__pic-block 
+    display: flex;
+    flex-direction: column;
+    margin-right: 36px;
+  
+
+  .course-container 
+    display: flex;
+    padding: 0 40px;
+  
+
+  .course-pic 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 26px;
+  
+
+  .course-price 
+    text-align: center;
+    font-size: 22px;
+  
+
+  .course-sec__descr-block 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 250px;
+  
+
+  .descr-text 
+    font-size: 14px;
+    margin-bottom: 25px;
+  
+  .btn 
+    background: black;
+    border-radius: 6px;
+    color: white;
+    width: 250px;
+    height: 35px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s linear;
+  
+  .btn:hover 
+    background: red;
+  
+@media screen and (max-width: 768px) 
+
+  .header__logo
+    position: absolute
+    top: 50%
+    bottom: 50%
+    transform: translate(-50%, -50%)
+  .citation-sec__title 
+    font-family: 'Jost', sans-serif;
+    max-width: 350px;
+    font-size: 36px;
+    text-align: center;
+  
+  .course-sec__pic-block 
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+
+
+  .course-container 
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    padding: 0; 
+
+  .course-pic 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 768px;
+    height: 512px;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 26px;
+
+  .course-pic1
+    background: url('/img/course1__pic1.jpg') center no-repeat
+    background-size: 100%
+  .course-pic2
+    background: url('/img/course1__pic2.jpg') center no-repeat
+    background-size: 100%
+  .course-pic3
+    background: url('/img/course1__pic3.jpg') center no-repeat
+    background-size: 100%
+  
+  
+
+  .course-price 
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 22px;
+  
+
+  .course-sec__descr-block 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 250px;
+    align-items: center;
+  
+
+  .descr-text 
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+  
+  .btn 
+    background: black;
+    border-radius: 10px;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s linear;
+  
+  .btn:hover 
+    background: #f5f5f5;
+    color: black;
+  
+
+  .form-sec__form 
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  
+  .form-sec__title 
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 45px;
+    max-width: 400px;
+  
+  .form__btn 
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 50px;
+    font-size: 20px;
+  
+  .form__input 
+    border-radius: 10px;
+    border: none;
+    min-width: 320px;
+    height: 50px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    max-width: 400px;
+  .author-sec__title
+    font-size: 40px
+  .author-sec__descr
+    font-size: 20px
+
+  .author-sec__tel
+    font-size: 20px
+  .author-sec__email
+    font-size: 20px
+@media screen and (max-width: 420px) 
+
+
+  .header__logo2
+    max-width: 345px
+  .header__logo
+    max-width: 345px
+    position: absolute
+    top: 50%
+    bottom: 50%
+    transform: translate(-50%, -50%)
+  
+  .citation-sec__title 
+    font-family: 'Jost', sans-serif;
+    max-width: 350px;
+    min-width: 300px;
+    font-size: 30px;
+    text-align: center;
+
+  .citation-sec
+    background: url('/img/Frame.png') no-repeat center center fixed
+    background-size: cover
+
+  
+  
+  .course1-sec
+    height: 85vh
+  .course-sec__pic-block 
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+    margin-bottom: 22px
+
+  .course-container 
+    display: flex;
+    flex-direction: column;
+    padding: 0; 
+  
+
+  .course-pic 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 26px;
+  
+
+  .course-price 
+    text-align: center;
+    font-size: 22px;
+
+  
+
+  .course-sec__descr-block 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 250px;
+    align-items: center;
+    padding: 0 40px;
+  
+
+  .descr-text 
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 22px;
+  
+  .btn 
+    background: black;
+    border-radius: 10px;
+    color: white;
+    width: 250px;
+    height: 50px
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s linear;
+
+  
+  .btn:hover 
+    background: #f5f5f5;
+    color: black;
+
+  .form-sec__form 
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    margin-bottom: 30%
+  
+  .form-sec__title 
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    width: 360px;
+  
+  .form__btn 
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+  
+  .form__input 
+    outline: none;
+    background: #EBEBEB;
+    border-radius: 10px;
+    border: none;
+    width: 360px;
+    height: 50px;
+    padding: 0 15px;
+    padding-top: 2px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: black;
+    letter-spacing: 0.02em;
+    &::placeholder
+      color: #606060;
+  .author-sec
+    height: 100vh
+
+      // /////////////import css-variables from 
+  .container
+    margin: 0 auto
+    margin-bottom: 35px
+
+  .border
+    height: 305px
+    width: 200px
+    background: transparent
+    border-radius: 10px
+    transition: border 1s
+    position: relative
+
+    &:hover
+      border: 1px solid white
+
+    h2
+      font-family: 'Jost', sans-serif;
+      font-size: 18px
+      color: white
+      margin: 15px 15px
+      opacity: 0
+      transition: opacity 1s
+
+  .card
+    height: 317px
+    width: 211px
+    border-radius: 10px
+    transition: background 0.8s
+    overflow: hidden
+    background: black
+    box-shadow: 0 40px 63px -60px #000000
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+
+  .card0
+    background: url('/img/contacts-section__pic.png') center top no-repeat
+    background-size: 211px
+
+    &:hover
+      background: url('/img/contacts-section__pic.png') left center no-repeat
+      background-size: 422px
+
+      h2
+        opacity: 1
+
+      .fa
+        opacity: 1
+
+
+
+  .fa
+    opacity: 0
+    transition: opacity 1s
+  .sec2
+    margin-bottom: 50px
+  .author-sec__descr 
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 18px;
+
+  .author-sec__tel
+    font-size: 18px
+  .author-sec__email
+    font-size: 18px
+
+  .author-sec__title
+    margin-bottom: 40px !important
+
+
+// @media screen and (max-width: 4000px)
+ 
+//   .header 
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100vh;
+//     background: #F7F7F7;
+    
+//   .header__logo
+//     position: absolute
+//     width: 700px
+//     top: 50%
+//     bottom: 50%
+//     transform: translate(-50%, -50%)
+//     transition: .1s all easy
+
+//   .header__logo2
+//     width: 700px
+//     display: none
+//     transition: .1s all easy
+    
+
+
+//   .sec 
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100vh;
+//     background: white;
+
+//   .course1-sec
+//     height: 70%
+//     background: url('/img/Frame.png') no-repeat center center fixed
+//     background-size: cover
+
+//   .sec3
+//     height: 90%
+//     padding-bottom: 100px
+      
+      
+    
+//   .citation-sec
+//     background: url('/img/Frame.png') no-repeat center center fixed
+//     background-size: cover
+
+//   .citation-sec__title 
+//     font-family: 'Jost', sans-serif;
+//     min-width: 900px;
+//     font-size: 78px;
+//     text-align: center;
+
+//   .course-sec__pic-block 
+//     display: flex;
+//     flex-direction: column;
+//     margin-right: 56px;
+
+
+//   .course-container 
+//     display: flex;
+
+
+//   .course-pic 
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+//     width: 800px;
+//     height: 600px;
+//     color: white;
+//     margin-bottom: 36px;
+//     font-weight: 500;
+//     font-size: 48px;
+//     line-height: 140%;
+//     /* or 45px */
+//     letter-spacing: 0.02em;
+
+//   .course-pic1
+//     background: url('/img/course1__pic1.jpg') center no-repeat
+//     background-size: 100%
+//   .course-pic2
+//     background: url('/img/course1__pic2.jpg') center no-repeat
+//     background-size: 100%
+//   .course-pic3
+//     background: url('/img/course1__pic3.jpg') center no-repeat
+//     background-size: 100%
+
+//   .course-price 
+//     text-align: center;
+//     font-weight: 400;
+//     font-size: 48px;
+//     line-height: 120%;
+//     letter-spacing: 0.02em;
+
+
+//   .course-sec__descr-block 
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     max-height: 600px;
+
+
+//   .descr-text 
+//     font-size: 38px;
+//     margin-bottom: 50px;
+//     max-width: 1200px;
+
+
+//   .btn 
+//     background: rgba(10, 9, 8, 0.9);
+//     border-radius: 10px;
+//     color: white;
+//     width: 500px;
+//     height: 90px;
+//     font-weight: 400;
+//     font-size: 38px;
+//     line-height: 38px;
+//     text-align: center;
+//     letter-spacing: 0.02em;
+
+//     cursor: pointer;
+//     border: none;
+//     transition: all 0.2s linear;
+
+//   .btn:hover 
+//     background: #f5f5f5;
+//     color: black;
+    
+
+//   .form-sec 
+//     background: url('/img/form-bg.png') top  no-repeat
+//     background-size: cover 
+//     min-height: 800px
+
+//   .form-sec__form 
+//     display: flex;
+//     flex-direction: column;
+//     max-width: 791px;
+
+//   .form-sec__title 
+//     width: 791px;
+//     font-weight: 500;
+//     font-size: 78px;
+//     line-height: 169.5%;
+//     text-align: center;
+//     letter-spacing: 0.02em;
+//     color: #FFFFFF;
+//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+//     margin-bottom: 50px;
+
+//   .form__btn 
+//     margin: 0 auto;
+//     margin-top: 10px;
+//     background: rgba(10, 9, 8, 0.95);
+//     border-radius: 15px; 
+//     height: 78px;
+//     width: 350px;
+//     font-weight: 400;
+//     font-size: 30px;
+//     line-height: 46px;
+//     text-align: center;
+//     letter-spacing: 0.02em; 
+
+//   .form__input 
+//     outline: none;
+//     background: #EBEBEB;
+//     border-radius: 15px;
+//     border: none;
+//     width: 790px;
+//     height: 80px;
+//     padding: 0 15px;
+//     padding-top: 2px;
+//     margin-bottom: 20px;
+//     font-weight: 400;
+//     font-size: 28px;
+//     line-height: 29px;
+//     color: black;
+//     letter-spacing: 0.02em;
+//     &::placeholder
+//       color: #606060;
+    
+
+
+//   .author-sec
+//       height: 100vh
+
+//   .author-container 
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//   .author-sec__title
+//     font-weight: 500;
+//     font-size: 78px;
+//     line-height: 100%;
+//     text-align: center;
+//     letter-spacing: 0.02em;
+//     color: #000000;
+//     margin-bottom: 100px !important; 
+
+//   .author-sec__pic 
+//     width: 400px;
+//     height: 600px;
+//     background: lightblue;
+//     border-radius: 10px;
+//     border: none;
+//     margin-bottom: 40px;
+//     cursor: pointer;
+
+
+//   .author-sec__descr 
+//     text-align: center;
+//     margin-bottom: 22px;
+//     font-size: 32px;
+
+//   .author-sec__tel 
+//     margin-bottom: 7px;
+//     font-size: 32px;
+
+//   .author-sec__email 
+//     font-size: 32px;
+
+//   .author-sec__socials 
+//     margin-top: 30px;
+//     display: flex;
+//     justify-content: space-between;
+//     min-width: 200px;
+//     height: 50px;
+
+//   .author-social 
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50px;
+//     background: lightblue;
+//     cursor: pointer;
+
+
+//     // /////////////import css-variables from 
+//   .container
+//     margin: 0 auto
+//     margin-bottom: 45px
+
+//   .border
+//     height: 785px
+//     width: 520px
+//     background: transparent
+//     border-radius: 10px
+//     transition: border 0.8s
+//     position: relative
+
+//     &:hover
+//       border: 2px solid white
+
+//     h2
+//       font-family: 'Jost', sans-serif;
+//       font-size: 32px
+//       color: white
+//       margin: 25px 25px
+//       opacity: 0
+//       transition: opacity 0.8s
+
+//   .card
+//     height: 810px
+//     width: 542px
+//     border-radius: 10px
+//     transition: background 0.6s
+//     overflow: hidden
+//     background: black
+//     box-shadow: 0 40px 63px -60px #000000
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     position: relative
+
+//   .card0
+//     background: url('/img/contacts-section__pic_big.png') center top no-repeat
+//     background-size: 543px
+
+//     &:hover
+//       background: url('/img/contacts-section__pic_big.png') left center no-repeat
+//       background-size: 800px
+
+//       h2
+//         opacity: 1
+
+//       .fa
+//         opacity: 1
+
+
+
+//   .fa
+//     opacity: 0
+//     transition: opacity 1s

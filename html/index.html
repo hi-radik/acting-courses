@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Курсы актерского мастерства</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <script>
+      window.onload = function () {
+        setInterval(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll == 0) {
+            $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
+            $(".header__logo2").css("display", "none");
+            $(".header__logo").css("display", "block");
+          }
+          if (scroll <= 700 && scroll >= 50) {
+            $("header").animate({ backgroundColor: "black" }, 150);
+            $(".header__logo").css("display", "none");
+            $(".header__logo2").css("display", "block");
+          }
+        }, 151);
+      };
+    </script>
+    <header class="header">
+      <div><img src="/img/logo.svg" alt="logo" class="header__logo" /></div>
+      <div><img src="/img/logo2.svg" alt="logo" class="header__logo2" /></div>
+    </header>
+
+    <main class="main">
+      <section class="citation-sec sec">
+        <div class="wrapper">
+          <div class="citation-sec__title">
+            Что бы ни случилось,<br />делай вид,<br />
+            что так и должно<br />было быть
+          </div>
+        </div>
+      </section>
+
+      <section class="course1-sec sec">
+        <div class="course-container">
+          <div class="course-sec__pic-block">
+            <div class="course-pic course-pic1">
+              Курс «Креативность:<br />
+              пути развития и тренинги
+            </div>
+            <div class="course-price">17 000 руб.</div>
+          </div>
+          <div class="course-sec__descr-block">
+            <div class="descr-text">
+              Курс будет полезен всем, кто испытывает сложности в процессе
+              межличностного общения с аудиторией, нуждается в обретении
+              внутренней свободы ихочет избавиться от пластических и
+              психологических зажимов.<br /><br />Срок обучения - 2,5 месяца (
+              40 акад. часов ), 1 раз в неделю по 4 акад. часа
+            </div>
+            <a href="#form__form" class="descr-btn btn">Записаться</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="course1-sec sec sec2">
+        <div class="course-container">
+          <div class="course-sec__pic-block">
+            <div class="course-pic course-pic2">
+              Курс «Школа<br />
+              ораторского искусства»
+            </div>
+            <div class="course-price">17 000 руб.</div>
+          </div>
+          <div class="course-sec__descr-block">
+            <div class="descr-text">
+              Курс ораторского искусства позволяет обрести навыки заразительного
+              действия словом, учит свободе в публичном пространстве и вниманию
+              к собеседнику, умению слышать себя и аудиторию, уверенности в
+              процессе воздействия на слушателя.<br /><br />Срок обучения - 2,5
+              месяца ( 40 акад. часов ), 1 раз в неделю по 4 акад. часа
+            </div>
+            <a href="#form__form" class="descr-btn btn">Записаться</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="course1-sec sec sec3">
+        <div class="course-container">
+          <div class="course-sec__pic-block">
+            <div class="course-pic course-pic3">
+              Подготовительный курс<br />
+              «Актерский абитуриент-класс»
+            </div>
+            <div class="course-price">20 000 руб.</div>
+          </div>
+          <div class="course-sec__descr-block">
+            <div class="descr-text">
+              Курс предназначен для тех, кто собирается связать свою творческую
+              жизнь с искусством театра, кино, телевидения и планирует в будущем
+              получить профессиональное образование в области актерского
+              искусства. <br /><br />Срок обучения - 2 месяца ( 96 акад. часов
+              ), 3 раза в неделю по 4 акад. часа
+            </div>
+            <a href="#form__form" class="descr-btn btn">Записаться</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-sec sec" id="form__form">
+        <form class="form-sec__form">
+          <h2 class="form-sec__title">
+            Заполни контактные<br />данные и мы с тобой<br />свяжемся
+          </h2>
+          <input
+            type="text"
+            value=""
+            name="name"
+            class="form__input"
+            placeholder="Имя"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            value=""
+            name="tel"
+            class="form__input"
+            placeholder="Email / телефон"
+            autocomplete="off"
+          />
+          <button class="form__btn btn">Отправить</button>
+        </form>
+      </section>
+
+      <section class="author-sec sec">
+        <div class="author-container">
+          <h2 class="author-sec__title form-sec__title">Автор курсов</h2>
+
+          <div class="container">
+            <div class="card card0">
+              <div class="border">
+                <h2>Андрей Толошин</h2>
+              </div>
+            </div>
+          </div>
+
+          <p class="author-sec__descr">
+            Профессор РГИСИ и СПБГИК, автор<br />методических и учебных пособий,
+            доктор<br />культурологии, артист академического<br />театра комедии
+            имени Н.П. Акимова
+          </p>
+          <p class="author-sec__tel"><b>Телефон:</b> 8 (800) 555 35 35</p>
+          <p class="author-sec__email"><b>Email:</b> atolshin@courses.ru</p>
+          <!-- <div class='author-sec__socials'>
+                            <div class='author-social'></div>
+                            <div class='author-social'></div>
+                            <div class='author-social'></div>
+                        </div> -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
