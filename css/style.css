@@ -980,6 +980,7 @@ a {
     font-size: 20px;
   }
   .author-sec__descr span {
+    display: block;
     text-align: center;
     font-size: 20px;
     color: black;
@@ -1246,6 +1247,7 @@ a {
     font-size: 18px;
   }
   .author-sec__descr span {
+    display: block;
     text-align: center;
     font-size: 20px;
     color: black;
