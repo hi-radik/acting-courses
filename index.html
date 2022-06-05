@@ -20,13 +20,13 @@
           var scroll = $(window).scrollTop();
           if (scroll == 0) {
             $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
-            $(".header__logo2").css("visibility", "hidden");
-            $(".header__logo").css("visibility", "visible");
+            $(".header__logo2").css("opacity", "0");
+            $(".header__logo").css("opacity", "1");
           }
           if (scroll <= 2000 && scroll >= 50) {
             $("header").animate({ backgroundColor: "black" }, 150);
-            $(".header__logo").css("visibility", "hidden");
-            $(".header__logo2").css("visibility", "visible");
+            $(".header__logo").css("opacity", "0");
+            $(".header__logo2").css("opacity", "1");
             
           }
         }, 151);
