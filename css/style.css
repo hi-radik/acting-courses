@@ -319,6 +319,10 @@ a {
   margin-bottom: 22px;
 }
 
+.author-sec__descr span {
+  display: none;
+}
+
 .author-sec__tel {
   margin-bottom: 7px;
 }
@@ -636,6 +640,13 @@ a {
   .author-sec__descr {
     text-align: center;
     margin-bottom: 22px;
+  }
+  .author-sec__descr span {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 3px;
+    font-weight: 500;
   }
   .author-sec__tel {
     margin-bottom: 7px;
