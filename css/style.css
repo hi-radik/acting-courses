@@ -896,8 +896,7 @@ a {
   .course1-sec {
     height: 100%;
     max-width: 100%;
-    background: url("/img/Frame2.png") no-repeat center center fixed;
-    background-size: cover;
+    background: url("/img/Frame2.png") center center fixed;
   }
   .course-price {
     text-align: center;
@@ -1022,7 +1021,7 @@ a {
     text-align: center;
   }
   .citation-sec {
-    background: url("/img/Frame2.png") fixed;
+    background: url("/img/Frame2.png") center center fixed;
     max-width: 100%;
   }
   .course1-sec {
