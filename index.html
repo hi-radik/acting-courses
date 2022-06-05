@@ -154,13 +154,15 @@
           var scroll = $(window).scrollTop();
           if (scroll == 0) {
             $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
-            $(".header__logo").css("visibility", "visible");
             $(".header__logo2").css("visibility", "hidden");
+            $(".header__logo").css("visibility", "visible");
+            
           }
-          if (scroll <= 700 && scroll >= 50) {
+          if (scroll <= 1080 && scroll >= 50) {
             $("header").animate({ backgroundColor: "black" }, 150);
-            $(".header__logo").css("visibility", "hidden");
             $(".header__logo2").css("visibility", "visible");
+            $(".header__logo").css("visibility", "hidden");
+            
           }
         }, 151);
       };
