@@ -18,15 +18,15 @@
       window.onload = function () {
         setInterval(function () {
           var scroll = $(window).scrollTop();
-          if (scroll == 0) {
+          if (scroll < 50) {
             $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
-            $(".header__logo2").css("opacity", "0");
-            $(".header__logo").css("opacity", "1");
+            $(".header__logo2").css("display", "none");
+            $(".header__logo").css("display", "block");
           }
           if (scroll <= 2000 && scroll >= 50) {
             $("header").animate({ backgroundColor: "black" }, 150);
-            $(".header__logo").css("opacity", "0");
-            $(".header__logo2").css("opacity", "1");
+            $(".header__logo").css("display", "none");
+            $(".header__logo2").css("display", "block");
             
           }
         }, 151);
