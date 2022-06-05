@@ -19,17 +19,17 @@
         setInterval(function () {
           var scroll = $(window).scrollTop();
           if (scroll < 50) {
-            $("header").animate({ backgroundColor: "#F7F7F7" }, 300);
-            $(".header__logo2").css("opacity", "0");
-            $(".header__logo").css("opacity", "1");
+            $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
+            $(".header__logo2").css("display", "none");
+            $(".header__logo").css("display", "flex");
           }
           if (scroll <= 2000 && scroll >= 50) {
-            $("header").animate({ backgroundColor: "black" }, 300);
-            $(".header__logo").css("opacity", "0");
-            $(".header__logo2").css("opacity", "1");
+            $("header").animate({ backgroundColor: "black" }, 150);
+            $(".header__logo").css("display", "none");
+            $(".header__logo2").css("display", "flex");
             
           }
-        }, 301);
+        }, 151);
       };
     </script>
     <header class="header">
