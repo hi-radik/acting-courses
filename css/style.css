@@ -36,8 +36,10 @@ a {
 
 .header__logo {
   position: absolute;
+  position: absolute;
   top: 50%;
-  bottom: 50%;
+  left: 50%;
+  margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: .1s all easy;
@@ -46,6 +48,12 @@ a {
 }
 
 .header__logo2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: none;
   -webkit-transition: .1s all easy;
   transition: .1s all easy;
@@ -803,7 +811,16 @@ a {
   .header__logo {
     position: absolute;
     top: 50%;
-    bottom: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .header__logo2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -965,12 +982,19 @@ a {
 @media screen and (max-width: 420px) {
   .header__logo2 {
     max-width: 345px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .header__logo {
     max-width: 345px;
     position: absolute;
     top: 50%;
-    bottom: 50%;
+    left: 50%;
+    margin-right: -50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
