@@ -20,14 +20,14 @@
           var scroll = $(window).scrollTop();
           if (scroll == 0) {
             $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
-            $(".header__logo").css("display", "block");
-            $(".header__logo2").css("display", "none");
+            $(".header__logo").css("visibility", "visible");
+            $(".header__logo2").css("visibility", "hidden");
             
           }
           if (scroll <= 700 && scroll >= 50) {
             $("header").animate({ backgroundColor: "black" }, 150);
-            $(".header__logo").css("display", "none");
-            $(".header__logo2").css("display", "block");
+            $(".header__logo").css("visibility", "hidden");
+            $(".header__logo2").css("visibility", "visible");
           }
         }, 151);
       };
