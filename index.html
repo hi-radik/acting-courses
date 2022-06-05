@@ -20,21 +20,21 @@
           var scroll = $(window).scrollTop();
           if (scroll < 50) {
             $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
-            $(".header__logo2").css("display", "none");
-            $(".header__logo").css("display", "flex");
+            $(".header__logo2").css("visibility", "hidden");
+            $(".header__logo").css("visibility", "visible");
           }
           if (scroll <= 2000 && scroll >= 50) {
             $("header").animate({ backgroundColor: "black" }, 150);
-            $(".header__logo").css("display", "none");
-            $(".header__logo2").css("display", "flex");
+            $(".header__logo").css("visibility", "hidden");
+            $(".header__logo2").css("visibility", "visible");
             
           }
         }, 151);
       };
     </script>
     <header class="header">
-      <div><img src="/img/logo.png" alt="logo" class="header__logo" /></div>
-      <div><img src="/img/logo2.png" alt="logo" class="header__logo2" /></div>
+      <div><img src="/img/logo.svg" alt="logo" class="header__logo" /></div>
+      <div><img src="/img/logo2.svg" alt="logo" class="header__logo2" /></div>
     </header>
 
     <main class="main">

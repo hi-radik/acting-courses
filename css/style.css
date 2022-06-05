@@ -36,27 +36,25 @@ a {
 
 .header__logo {
   position: absolute;
-  position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: .1s all easy;
-  transition: .1s all easy;
   width: 453px;
+  height: 250px;
 }
 
 .header__logo2 {
+  z-index: 10;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  display: none;
-  -webkit-transition: .1s all easy;
-  transition: .1s all easy;
+  width: 453px;
+  height: 250px;
 }
 
 .sec {
@@ -76,6 +74,7 @@ a {
 
 .course1-sec {
   height: 100%;
+  max-width: 100%;
   background: url("/img/Frame.png") no-repeat center center fixed;
   background-size: cover;
 }
@@ -88,6 +87,7 @@ a {
 .citation-sec {
   background: url("/img/Frame.png") no-repeat center center fixed;
   background-size: cover;
+  max-width: 100%;
 }
 
 .citation-sec__title {
@@ -894,6 +894,12 @@ a {
     background: url("/img/course1__pic3.jpg") center no-repeat;
     background-size: 100%;
   }
+  .course1-sec {
+    height: 100%;
+    max-width: 100%;
+    background: url("/img/Frame2.png") no-repeat center center fixed;
+    background-size: cover;
+  }
   .course-price {
     text-align: center;
     font-size: 28px;
@@ -992,6 +998,7 @@ a {
 
 @media screen and (max-width: 420px) {
   .header__logo2 {
+    z-index: 10;
     max-width: 345px;
     position: absolute;
     top: 50%;
@@ -1017,7 +1024,14 @@ a {
     text-align: center;
   }
   .citation-sec {
-    background: url("/img/Frame.png") no-repeat center center fixed;
+    background: url("/img/Frame2.png") no-repeat center center fixed;
+    max-width: 100%;
+    background-size: cover;
+  }
+  .course1-sec {
+    height: 100%;
+    max-width: 100%;
+    background: url("/img/Frame2.png") no-repeat center center fixed;
     background-size: cover;
   }
   .course1-sec {
