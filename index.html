@@ -14,24 +14,6 @@
   </head>
 
   <body>
-    <script>
-      window.onload = function () {
-        setInterval(function () {
-          var scroll = $(window).scrollTop();
-          if (scroll == 0) {
-            $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
-            $(".header__logo").css("visibility", "visible");
-            $(".header__logo2").css("visibility", "hidden");
-            
-          }
-          if (scroll <= 700 && scroll >= 50) {
-            $("header").animate({ backgroundColor: "black" }, 150);
-            $(".header__logo").css("visibility", "hidden");
-            $(".header__logo2").css("visibility", "visible");
-          }
-        }, 151);
-      };
-    </script>
     <header class="header">
       <div><img src="/img/logo.svg" alt="logo" class="header__logo" /></div>
       <div><img src="/img/logo2.svg" alt="logo" class="header__logo2" /></div>
@@ -151,7 +133,7 @@
           </div>
 
           <p class="author-sec__descr">
-            <span>А.Н. Толшин</span><br>
+            <span>А.Н. Толшин</span><br />
             Профессор РГИСИ и СПБГИК, автор<br />методических и учебных пособий,
             доктор<br />культурологии, артист академического<br />театра комедии
             имени Н.П. Акимова
@@ -166,5 +148,22 @@
         </div>
       </section>
     </main>
+    <script>
+      window.onload = function () {
+        setInterval(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll == 0) {
+            $("header").animate({ backgroundColor: "#F7F7F7" }, 150);
+            $(".header__logo").css("visibility", "visible");
+            $(".header__logo2").css("visibility", "hidden");
+          }
+          if (scroll <= 700 && scroll >= 50) {
+            $("header").animate({ backgroundColor: "black" }, 150);
+            $(".header__logo").css("visibility", "hidden");
+            $(".header__logo2").css("visibility", "visible");
+          }
+        }, 151);
+      };
+    </script>
   </body>
 </html>
