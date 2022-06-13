@@ -32,9 +32,9 @@ $mail->Subject = 'Заявка с тестового сайта';
 $mail->Body    = '' .$name . ' оставил заявку, его контакт: ' .$phone. 
 $mail->AltBody = '';
 
-if(!$mail->send()) {
-    echo 'Error';
-} else {
-    header('location: thx.html');
-}
+// if(!$mail->send()) {
+//     echo 'Error';
+// } else {
+//     header('location: thx.html');
+// }
 ?>
