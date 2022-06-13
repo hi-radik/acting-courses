@@ -28,7 +28,7 @@ $mail->addAddress('atolshin-courses@mail.ru');     // Кому будет ухо
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта';
+$mail->Subject = 'Заявка с сайта';
 $mail->Body    = '' .$name . ' оставил заявку, его контакт: ' .$phone. 
 $mail->AltBody = '';
 
